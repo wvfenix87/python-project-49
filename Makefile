@@ -2,7 +2,7 @@ lint:
 	uv run ruff check brain_games
 
 brain-games:
-	uv run brain-games
+	uv run start-game -t even
 
 build:
 	uv build
