@@ -1,5 +1,3 @@
-import prompt
-
 from brain_games.utils import is_even_num, get_random_num
 from brain_games.user_interactive import ask_question, is_correct_answer, goodbye
 

@@ -3,7 +3,7 @@ import argparse
 from brain_games.user_interactive import welcome_user
 from brain_games.games.even import start_even_game
 from brain_games.games.calc import start_calc_game
-
+from brain_games.games.nod import start_nod_game
 
 def main():
     parser = create_parser()
@@ -14,6 +14,8 @@ def main():
             start_even_game(user_name, args_namespace.game_length)
         case "calc":
             start_calc_game(user_name, args_namespace.game_length)
+        case "nod":
+            start_nod_game(user_name, args_namespace.game_length)
         case _: 
             print(f'Sorry {user_name}. Unknown game')
 
