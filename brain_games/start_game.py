@@ -5,6 +5,7 @@ from brain_games.games.even import start_even_game
 from brain_games.games.calc import start_calc_game
 from brain_games.games.nod import start_nod_game
 from brain_games.games.progression import start_progression_game
+from brain_games.games.prime import start_prime_game
 
 def main():
     parser = create_parser()
@@ -19,6 +20,8 @@ def main():
             start_nod_game(user_name, args_namespace.game_length)
         case "progression":
             start_progression_game(user_name, args_namespace.game_length)
+        case "prime":
+            start_prime_game(user_name, args_namespace.game_length)
         case _: 
             print(f'Sorry {user_name}. Unknown game')
 

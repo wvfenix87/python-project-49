@@ -15,7 +15,7 @@ def start_calc_game(user_name: str, count_to_win: int):
         correct_answer = calculate(random_number1, random_number2, opertation)
         if is_correct_answer(answer, str(correct_answer)):
             count_of_right_answers += 1
-        else :
+        else:
             user_is_win = False
             break
     goodbye(user_name, user_is_win)

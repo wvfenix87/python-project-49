@@ -15,7 +15,7 @@ def start_progression_game(user_name: str, count_to_win: int):
         correct_answer = progression_list[hide_elem]
         if is_correct_answer(answer, str(correct_answer)):
             count_of_right_answers += 1
-        else :
+        else:
             user_is_win = False
             break
     goodbye(user_name, user_is_win)
